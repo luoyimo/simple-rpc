@@ -7,11 +7,12 @@
         <artifactId>simple-rpc</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.simplerpc</groupId>
+
     <artifactId>server</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+
     <name>server</name>
     <description>A simple rpc server project for Spring Boot</description>
+
 
     <dependencies>
         <dependency>
@@ -21,4 +22,12 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
